@@ -6,22 +6,10 @@ let calcButton = document.querySelector('#calcButton')
 //console.log(baseInput, heightInput, areaInput, calcButton)
 
 calcButton.addEventListener('click', () => {
-   
-    workInput()
-  
-
+    console.log('működik' )
 })
 
 function workInput(){
-    let base =Number(baseInput.value)
-    let height = Number(heightInput.value)
-    let area = calcTriangleArea(base, height)
-    areaInput.value = area
-    console.log(area)
-}
-
-
-
-function calcTriangleArea(base,height){
-    return base * height / 2;
+    let base = baseInput.ariaValue;
+    console.log(typeof base)
 }
